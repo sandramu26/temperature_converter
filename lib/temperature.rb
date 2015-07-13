@@ -1,8 +1,8 @@
 class Temperature
 
 	def initialize(temp)
-                @temp = temp
-        end
+    	@temp = temp
+    end
 	
 	def self.in_fahrenheit(temp)				
 		obj_f  = Temperature.new(temp)				
