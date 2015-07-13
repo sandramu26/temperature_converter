@@ -1,6 +1,5 @@
 require 'spec_helper'
 require 'temperature'
-
 describe Temperature do
 
   context 'from fahrenheit to celsius' do

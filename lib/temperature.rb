@@ -1,22 +1,19 @@
+# convertir de farenh a cel y de cel a faren
 class Temperature
+  def initialize(temp)
+    @temp = temp
+  end
+  def self.in_fahrenheit(temp)
+    Temperature.new(temp)
+  end
+  def self.in_celsius(temp)
+    Temperature.new(temp)
+  end
+  def to_far
+    ((@temp * 1.8) + 32)
+  end
 
-	def initialize(temp)
-    	@temp = temp
-	end
-	
-	def self.in_fahrenheit(temp)				
-		obj_f  = Temperature.new(temp)				
-	end
-
-	def self.in_celsius(temp)
-		obj_c  = Temperature.new(temp)	
-	end
-	
-	def to_far
-		resul = ((@temp * 1.8) + 32)
-	end
-
-	def to_cel
-		resul = ((@temp - 32) / 1.8)
-	end
+  def to_cel
+    ((@temp - 32) / 1.8)
+  end
 end
