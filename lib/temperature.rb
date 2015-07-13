@@ -2,7 +2,7 @@ class Temperature
 
 	def initialize(temp)
     	@temp = temp
-    end
+	end
 	
 	def self.in_fahrenheit(temp)				
 		obj_f  = Temperature.new(temp)				
